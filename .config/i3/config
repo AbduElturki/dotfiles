@@ -169,7 +169,7 @@ bindsym Print exec "flameshot gui"
 
 # to be changed
 set $bg-color 	         #2f343f
-set $active-border       #648de5
+set $active-border       #f090d8
 set $inactive-bg-color   #2f343f
 set $text-color          #f3f4f5
 set $inactive-text-color #676E7D
@@ -177,8 +177,8 @@ set $urgent-bg-color     #E53935
 
 
 # class                 border  	backgr. 		text    indicator child_border
-client.focused          #ffb52a 	#ffb52a 		#ffffff #ffb52a   #ffb52a"""
-client.focused_inactive $bg-color 	#fce58a		 	#ffffff #484e50   #5f676a
+client.focused          $active-border 	$active-border 		#ffffff #f090d8   #f090d8
+client.focused_inactive $bg-color 	$active-border	 	#ffffff #484e50   #5f676a
 client.unfocused        $bg-color 	$inactive-bg-color	#888888 #292d2e   #222222
 client.urgent           $bg-color 	$urgent-bg-color 	#ffffff #9C6594   #9C6594
 client.placeholder      $bg-color 	#292929 		#ffffff #292929   #292929
@@ -186,8 +186,8 @@ client.placeholder      $bg-color 	#292929 		#ffffff #292929   #292929
 client.background       $bg-color 
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
-exec_always feh --bg-fill /home/abdu/.config/wall.png
-exec_always xrandr --output HDMI-0 --off --output DP-6 --off --output DP-5 --off --output DP-4 --mode 2560x1440 --rate 144.00 --pos 1080x384 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --mode 1920x1080 --pos 0x0 --rotate left --output DP-0 --off
+exec_always feh --bg-fill /home/abdu/.config/wall.jpg
+exec_always xrandr --output HDMI-0 --off --output DP-6 --off --output DP-5 --off --output DP-4 --primary --mode 2560x1440 --rate 144.00 --pos 1080x384 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --mode 1920x1080 --pos 0x0 --rotate left --output DP-0 --off
 
 #floating apps
 for_window [class="Pavucontrol"] floating enable

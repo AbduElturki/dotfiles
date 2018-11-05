@@ -17,7 +17,7 @@
 ;==========================================================
 
 [colors]
-bg = ${xrdb:color8:#0f2536}
+bg = ${xrdb:color8:#2F343F}
 fg = ${xrdb:color15:#FFFFFF}
 
 active = #f090d8
@@ -32,7 +32,7 @@ magenta1 = ${xrdb:color5:#1B5C62}
 cyan1 = ${xrdb:color6:#148A76}
 white1 = ${xrdb:color7:#87b6b7}
 
-black2 = ${xrdb:color8:#0f2536}
+black2 = ${xrdb:color8:#2F343F}
 red2 = ${xrdb:color9:#52ac70}
 green2 = ${xrdb:color10:#20ff8d}
 yellow2 = ${xrdb:color11:#1b8b8b}
@@ -66,7 +66,7 @@ border-color = ${colors.black2}
 line-size = 2
 
 font-0 = cherry:pixelsize=7:antialias=false;2
-font-1 = TerminessTTF Nerd Font Mono:pixelsize=16:antialias=true;4 
+font-1 = TerminessTTF Nerd Font Mono:pixelsize=16:antialias=true;4
 font-2 = unifont:fontformat=truetype:size=8:antialias=true;0 ;BARS
 font-3 = FontAwesome:style=Regular:pixelsize=10;1 
 font-4 = siji:pixelsize=8:antialias=false;2
@@ -164,7 +164,7 @@ ws-icon-7=8;
 ws-icon-8=9; 
 ws-icon-9=10; 
 
-label-focused = %{B#f0a8d8 F#0f2536}%{B- F-}%{B#f0a8d8 F#0f2536}%icon%%{B- F-}%{B#f0a8d8 F#0f2536}%{B- F-}
+label-focused = %{B#f0a8d8 F#2F343F}%{B- F-}%{B#f0a8d8 F#2F343F}%icon%%{B- F-}%{B#f0a8d8 F#2F343F}%{B- F-}
 #label-focused-underline = ${colors.red}
 label-focused-background = ${colors.active}
 label-focused-foreground = ${colors.fg}
@@ -179,19 +179,19 @@ label-empty = %icon%
 label-empty-background = ${colors.bg}
 label-empty-foreground = ${colors.fg}
 
-label-urgent = %{B#086757 F#0f2536}%{B- F-}%{B#086757 F#071017}%icon%%{B- F-}%{B#086757 F#0f2536}%{B- F-}
+label-urgent = %{B#bf2a42 F#2F343F}%{B- F-}%{B#bf2a42 F#071017}%icon%%{B- F-}%{B#0bf2a42 F#2F343F}%{B- F-}
 #label-urgent-underline = ${colors.fg}
 label-urgent-background = ${colors.bg}
 label-urgent-foreground = ${colors.fg}
 
-label-unfocused = %{B#183060 F#0f2536}%{B- F-}%{B#183060 F#FFFFFF}%icon%%{B- F-}%{B#183060 F#0f2536}%{B- F-} 
+label-unfocused = %{B#183060 F#2F343F}%{B- F-}%{B#183060 F#FFFFFF}%icon%%{B- F-}%{B#183060 F#2F343F}%{B- F-} 
 #label-unfocused-underline = ${colors.ul}
 label-unfocused-background = ${colors.bg}
 label-unfocused-foreground = ${colors.fg}
 
-label-inactive-focused = %{B#183060 F#0f2536}%{B- F-}%{B#183060 F#FFFFFF}%icon%%{B- F-}%{B#183060 F#0f2536}%{B- F-}
+label-inactive-focused = %{B#183060 F#2F343F}%{B- F-}%{B#183060 F#FFFFFF}%icon%%{B- F-}%{B#183060 F#2F343F}%{B- F-}
 
-label-visable = %{B#183060 F#0f2536}%{B- F-}%{B#183060 F#FFFFFF}%icon%%{B- F-}%{B#183060 F#0f2536}%{B- F-} 
+label-visable = %{B#183060 F#2F343F}%{B- F-}%{B#183060 F#FFFFFF}%icon%%{B- F-}%{B#183060 F#2F343F}%{B- F-} 
 #label-unfocused-underline = ${colors.ul}
 label-visable-background = ${colors.bg}
 label-visable-foreground = ${colors.fg}
@@ -209,12 +209,12 @@ udspeed-minwidth = 3
 
 format-connected = <label-connected>
 format-disconnected = <label-disconnected>
-label-connected = %{A2:nm-connection-editor:}%downspeed%%{B#0fbda0 F#148A76}%{B- F-}%{B#0fbda0 F#0f2536}%{B- F-}%{B#148A76 F#0fbda0}%{B- F-}%{B#148A76 F#b9fafc}%upspeed%%{B- F-}%{A}
+label-connected = %{A2:nm-connection-editor:}%downspeed%%{B#0fbda0 F#148A76}%{B- F-}%{B#0fbda0 F#2F343F}%{B- F-}%{B#148A76 F#0fbda0}%{B- F-}%{B#148A76 F#b9fafc}%upspeed%%{B- F-}%{A}
 label-disconnected =  disconnected 
-format-connected-prefix = %{B#0fbda0 F#0f2536}%{B- F-}%{B#0fbda0 F#0f2536}%{B- F-}%{B#148A76 F#0fbda0}%{B- F-}
-format-connected-suffix = %{B#148A76 F#0f2536}%{B- F-}
-format-disconnected-prefix = %{B#0fbda0 F#0f2536}%{B- F-}%{B#0fbda0 F#0f2536}%{B- F-}%{B#148A76 F#0fbda0}%{B- F-}
-format-disconnected-suffix = %{B#148A76 F#0f2536}%{B- F-}
+format-connected-prefix = %{B#0fbda0 F#2F343F}%{B- F-}%{B#0fbda0 F#2F343F}%{B- F-}%{B#148A76 F#0fbda0}%{B- F-}
+format-connected-suffix = %{B#148A76 F#2F343F}%{B- F-}
+format-disconnected-prefix = %{B#0fbda0 F#2F343F}%{B- F-}%{B#0fbda0 F#2F343F}%{B- F-}%{B#148A76 F#0fbda0}%{B- F-}
+format-disconnected-suffix = %{B#148A76 F#2F343F}%{B- F-}
 label-connected-foreground = ${colors.fg}
 label-connected-background = ${colors.cyan1}
 label-disconnected-foreground = ${colors.fg}
@@ -228,8 +228,8 @@ date = " %d-%m-%Y "
 time = %H:%M
 time-alt = %H:%M:%S
 date-alt = "%a %d-%m-%Y "
-format-prefix = %{B#52ac70 F#0f2536}%{B- F-}%{B#52ac70 F#0f2536}%{B- F-}%{B#497B5A F#52ac70}%{B- F-}
-format-suffix = %{B#497B5A F#0f2536}%{B- F-}
+format-prefix = %{B#52ac70 F#2F343F}%{B- F-}%{B#52ac70 F#2F343F}%{B- F-}%{B#497B5A F#52ac70}%{B- F-}
+format-suffix = %{B#497B5A F#2F343F}%{B- F-}
 label-foreground = ${colors.fg}
 label-background = ${colors.red1}
 
@@ -239,10 +239,10 @@ sink = alsa_output.pci-0000_00_1f.3.analog-stereo
 format-volume = %{A2:pavucontrol:}<label-volume>%{A}
 label-volume = %percentage:2%%
 label-muted = OFF
-format-volume-prefix = %{B#179696 F#0f2536}%{B- F-}%{B#179696 F#0f2536}%{B- F-}%{B#196D6D F#179696}%{B- F-}
-format-volume-suffix = %{B#196D6D F#0f2536}%{B- F-}
-format-muted-prefix = %{B#179696 F#0f2536}%{B- F-}%{B#179696 F#0f2536}%{B- F-}%{B#196D6D F#179696}%{B- F-}
-format-muted-suffix = %{B#196D6D F#0f2536}%{B- F-}
+format-volume-prefix = %{B#179696 F#2F343F}%{B- F-}%{B#179696 F#2F343F}%{B- F-}%{B#196D6D F#179696}%{B- F-}
+format-volume-suffix = %{B#196D6D F#2F343F}%{B- F-}
+format-muted-prefix = %{B#179696 F#2F343F}%{B- F-}%{B#179696 F#2F343F}%{B- F-}%{B#196D6D F#179696}%{B- F-}
+format-muted-suffix = %{B#196D6D F#2F343F}%{B- F-}
 label-volume-foreground = ${colors.fg}
 label-volume-background = ${colors.blue1}
 label-muted-foreground = ${colors.fg}
@@ -260,8 +260,8 @@ click-left = playerctl -p spotify play-pause
 click-right = playerctl -p spotify next
 label = %output:0:30:...%
 format = <label>
-format-prefix = %{B#52ac70 F#0f2536}%{B- F-}%{B#52ac70 F#0f2536}%{B- F-}%{B#497B5A F#52ac70}%{B- F-}
-format-suffix = %{B#497B5A F#0f2536}%{B- F-}
+format-prefix = %{B#52ac70 F#2F343F}%{B- F-}%{B#52ac70 F#2F343F}%{B- F-}%{B#497B5A F#52ac70}%{B- F-}
+format-suffix = %{B#497B5A F#2F343F}%{B- F-}
 label-foreground = ${colors.fg}
 label-background = ${colors.red1}
 # format-prefix = " "
