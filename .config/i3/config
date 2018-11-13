@@ -32,6 +32,7 @@ bindsym $mod+Return exec $terminal
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
+#bindsym $mod+d exec dmenu
 bindsym $mod+d exec rofi -modi drun -show drun  
 
 # change focus (disabled because of vimium)
@@ -187,7 +188,6 @@ client.background       $bg-color
 
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 exec_always feh --bg-fill /home/abdu/.config/wall.jpg
-exec_always xrandr --output HDMI-0 --off --output DP-6 --off --output DP-5 --off --output DP-4 --primary --mode 2560x1440 --rate 144.00 --pos 1080x384 --rotate normal --output DP-3 --off --output DP-2 --off --output DP-1 --mode 1920x1080 --pos 0x0 --rotate left --output DP-0 --off
 
 #floating apps
 for_window [class="Pavucontrol"] floating enable
@@ -198,6 +198,11 @@ exec --no-startup-id thunderbird
 exec --no-startup-id discord
 exec --no-startup-id slack
 exec --no-startup-id compton
+exec "setxkbmap -layout gb"
 
 # i3-lock
 bindsym $mod+shift+x exec i3lock
+
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
